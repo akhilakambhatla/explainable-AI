@@ -229,10 +229,6 @@ Each output is a **4-panel visualization**:
     <td align="center"><img src="weights/yolov5_small/xai_output/weapon32_xai.png" width="380"/><br><em>weapon32</em></td>
     <td align="center"><img src="weights/yolov5_small/xai_output/weapon86_xai.png" width="380"/><br><em>weapon86</em></td>
   </tr>
-  <tr>
-    <td align="center"><img src="weights/yolov5_small/xai_output/weapon115_xai.png" width="380"/><br><em>weapon115</em></td>
-    <td align="center"><img src="weights/yolov5_small/xai_output/weapon345_xai.png" width="380"/><br><em>weapon345</em></td>
-  </tr>
 </table>
 
 ### YOLOv5 Large — Sample Results
