@@ -70,6 +70,20 @@ ExplainableAI/
 └── yolov5/                         # YOLOv5 source (git submodule)
 ```
 
+### Quick File Links
+
+| File / Folder | Description |
+|---------------|-------------|
+| [gradcam_single.ipynb](https://github.com/akhilakambhatla/explainable-AI/blob/main/gradcam_single.ipynb) | Single-image XAI with YOLOv5 small |
+| [gradcam_batch_yolov5.ipynb](https://github.com/akhilakambhatla/explainable-AI/blob/main/gradcam_batch_yolov5.ipynb) | Batch XAI across all test images with YOLOv5 large |
+| [gradcam_detectron2_single.ipynb](https://github.com/akhilakambhatla/explainable-AI/blob/main/gradcam_detectron2_single.ipynb) | Single-image XAI with Detectron2 Faster R-CNN |
+| [weights/test/](https://github.com/akhilakambhatla/explainable-AI/tree/main/weights/test) | 10 weapon test images |
+| [weights/yolov5_small/](https://github.com/akhilakambhatla/explainable-AI/tree/main/weights/yolov5_small) | YOLOv5s weights + XAI outputs |
+| [weights/yolov5_med/](https://github.com/akhilakambhatla/explainable-AI/tree/main/weights/yolov5_med) | YOLOv5m weights + XAI outputs |
+| [weights/yolov5_lar/](https://github.com/akhilakambhatla/explainable-AI/tree/main/weights/yolov5_lar) | YOLOv5l weights + XAI outputs |
+| [weights/fastercnn/resnet50c4/](https://github.com/akhilakambhatla/explainable-AI/tree/main/weights/fastercnn/resnet50c4) | Detectron2 Faster R-CNN weights |
+| [yolov5/](https://github.com/akhilakambhatla/explainable-AI/tree/main/yolov5) | YOLOv5 source code (git submodule) |
+
 ---
 
 ## Model Details
@@ -138,7 +152,7 @@ git lfs pull
 
 ### Single Image — YOLOv5
 
-Open `gradcam_single.ipynb` and update the paths in the relevant cells:
+Open [gradcam_single.ipynb](https://github.com/akhilakambhatla/explainable-AI/blob/main/gradcam_single.ipynb) and update the paths in the relevant cells:
 
 ```python
 weights_path = "weights/yolov5_small/best.pt"   # or yolov5_med / yolov5_lar
@@ -153,7 +167,7 @@ Run all cells. The notebook will:
 
 ### Batch Processing — YOLOv5
 
-Open `gradcam_batch_yolov5.ipynb` and update:
+Open [gradcam_batch_yolov5.ipynb](https://github.com/akhilakambhatla/explainable-AI/blob/main/gradcam_batch_yolov5.ipynb) and update:
 
 ```python
 weights_path  = "weights/yolov5_lar/best.pt"
@@ -165,7 +179,7 @@ This processes every image in the test folder and saves individual XAI results.
 
 ### Single Image — Detectron2
 
-Open `gradcam_detectron2_single.ipynb` and update:
+Open [gradcam_detectron2_single.ipynb](https://github.com/akhilakambhatla/explainable-AI/blob/main/gradcam_detectron2_single.ipynb) and update:
 
 ```python
 weights_path = "weights/fastercnn/resnet50c4/model_final.pth"
@@ -245,3 +259,12 @@ Each output is a **4-panel visualization**:
 - [YOLOv5 by Ultralytics](https://github.com/ultralytics/yolov5)
 - [Detectron2 by Facebook AI Research](https://github.com/facebookresearch/detectron2)
 - Grad-CAM: *Selvaraju et al., "Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization," ICCV 2017.*
+
+---
+
+## Author
+
+**Akhila Kambhatla**  
+Southern Illinois University  
+2025  
+[github.com/akhilakambhatla](https://github.com/akhilakambhatla)
